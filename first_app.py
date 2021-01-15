@@ -12,7 +12,7 @@ from urllib import error
 
 mask = pd.read_csv(r'result_debug.csv')
 
-mask.drop(columns='gpu_server',inplace='True')
+mask.drop(columns='gpu_server',inplace=True)
 
 
 mask_people = mask[['name', 'no_correct_wear_mask', 'no_incorrect_wear_mask', "no_not_wear_mask"]]
