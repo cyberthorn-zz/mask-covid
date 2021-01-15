@@ -45,7 +45,7 @@ toongkru.loc[0, 'no_not_wear_mask_minute'] = toongkru.loc[0, 'no_not_wear_mask']
 toongkru['total_minute'] = toongkru['total'].diff()
 toongkru.loc[0, 'total_minute'] = toongkru.loc[0, 'total']
 
-toongkru['datetime'] = toongkru['date'].dt.date.astype(str) + " " + toongkru['hour'].astype(str) +":" + toongkru['minute'].astype(str)
+toongkru['datetime'] = toongkru['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 toongkru = toongkru[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
@@ -66,7 +66,7 @@ rama4_2.loc[0, 'no_not_wear_mask_minute'] = rama4_2.loc[0, 'no_not_wear_mask']
 rama4_2['total_minute'] = rama4_2['total'].diff()
 rama4_2.loc[0, 'total_minute'] = rama4_2.loc[0, 'total']
 
-rama4_2['datetime'] = rama4_2['date'].dt.date.astype(str) + " " + rama4_2['hour'].astype(str) +":" + rama4_2['minute'].astype(str)
+rama4_2['datetime'] = rama4_2['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 rama4_2 = rama4_2[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
@@ -89,7 +89,7 @@ rama1_2.loc[0, 'no_not_wear_mask_minute'] = rama1_2.loc[0, 'no_not_wear_mask']
 rama1_2['total_minute'] = rama1_2['total'].diff()
 rama1_2.loc[0, 'total_minute'] = rama1_2.loc[0, 'total']
 
-rama1_2['datetime'] = rama1_2['date'].dt.date.astype(str) + " " + rama1_2['hour'].astype(str) +":" + rama1_2['minute'].astype(str)
+rama1_2['datetime'] = rama1_2['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 rama1_2 = rama1_2[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 rama1_2.set_index('datetime', inplace=True)
@@ -110,7 +110,7 @@ rajdamri_1.loc[0, 'no_not_wear_mask_minute'] = rajdamri_1.loc[0, 'no_not_wear_ma
 rajdamri_1['total_minute'] = rajdamri_1['total'].diff()
 rajdamri_1.loc[0, 'total_minute'] = rajdamri_1.loc[0, 'total']
 
-rajdamri_1['datetime'] = rajdamri_1['date'].dt.date.astype(str) + " " + rajdamri_1['hour'].astype(str) +":" + rajdamri_1['minute'].astype(str)
+rajdamri_1['datetime'] = rajdamri_1['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 rajdamri_1 = rajdamri_1[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
@@ -132,7 +132,7 @@ rajdamri21.loc[0, 'no_not_wear_mask_minute'] = rajdamri21.loc[0, 'no_not_wear_ma
 rajdamri21['total_minute'] = rajdamri21['total'].diff()
 rajdamri21.loc[0, 'total_minute'] = rajdamri21.loc[0, 'total']
 
-rajdamri21['datetime'] = rajdamri21['date'].dt.date.astype(str) + " " + rajdamri21['hour'].astype(str) +":" + rajdamri21['minute'].astype(str)
+rajdamri21['datetime'] = rajdamri21['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 rajdamri21 = rajdamri21[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
@@ -154,7 +154,7 @@ rama1_1.loc[0, 'no_not_wear_mask_minute'] = rama1_1.loc[0, 'no_not_wear_mask']
 rama1_1['total_minute'] = rama1_1['total'].diff()
 rama1_1.loc[0, 'total_minute'] = rama1_1.loc[0, 'total']
 
-rama1_1['datetime'] = rama1_1['date'].dt.date.astype(str) + " " + rama1_1['hour'].astype(str) +":" + rama1_1['minute'].astype(str)
+rama1_1['datetime'] = rama1_1['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 rama1_1 = rama1_1[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
@@ -177,7 +177,7 @@ pharma1_2.loc[0, 'no_not_wear_mask_minute'] = pharma1_2.loc[0, 'no_not_wear_mask
 pharma1_2['total_minute'] = pharma1_2['total'].diff()
 pharma1_2.loc[0, 'total_minute'] = pharma1_2.loc[0, 'total']
 
-pharma1_2['datetime'] = pharma1_2['date'].dt.date.astype(str) + " " + pharma1_2['hour'].astype(str) +":" + pharma1_2['minute'].astype(str)
+pharma1_2['datetime'] = pharma1_2['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 pharma1_2 = pharma1_2[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
@@ -200,7 +200,7 @@ rajdamri2_2.loc[0, 'no_not_wear_mask_minute'] = rajdamri2_2.loc[0, 'no_not_wear_
 rajdamri2_2['total_minute'] = rajdamri2_2['total'].diff()
 rajdamri2_2.loc[0, 'total_minute'] = rajdamri2_2.loc[0, 'total']
 
-rajdamri2_2['datetime'] = rajdamri2_2['date'].dt.date.astype(str) + " " + rajdamri2_2['hour'].astype(str) +":" + rajdamri2_2['minute'].astype(str)
+rajdamri2_2['datetime'] = rajdamri2_2['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 rajdamri2_2 = rajdamri2_2[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
@@ -222,7 +222,7 @@ pharma1_1.loc[0, 'no_not_wear_mask_minute'] = pharma1_1.loc[0, 'no_not_wear_mask
 pharma1_1['total_minute'] = pharma1_1['total'].diff()
 pharma1_1.loc[0, 'total_minute'] = pharma1_1.loc[0, 'total']
 
-pharma1_1['datetime'] = pharma1_1['date'].dt.date.astype(str) + " " + pharma1_1['hour'].astype(str) +":" + pharma1_1['minute'].astype(str)
+pharma1_1['datetime'] = pharma1_1['date'].apply(lambda x: x.strftime("%d-%m-%Y %H:%M"))
 
 pharma1_1 = pharma1_1[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no_not_wear_mask_minute", "datetime" ]]
 
