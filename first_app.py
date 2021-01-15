@@ -95,7 +95,7 @@ rama1_2 = rama1_2[['correct_wear_mask_minute', "incorrect_wear_mask_minute", "no
 
 rama1_2.set_index('datetime', inplace=True)
 
-st.title('SuperAI deep application 77')
+st.title('SuperAI deep application')
 st.header('DeepCare')
 # st.write(mask)
 st.write(mask)
